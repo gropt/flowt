@@ -23,9 +23,14 @@ h2{text-align:center;margin:0 0 32px;color:var(--primary)}
 .card .ic{font-size:2rem}
 .card h3{margin:8px 0 6px}
 .card p{margin:0;color:var(--muted);font-size:.95rem}
-ol{max-width:620px;margin:0 auto;padding-left:22px}
-ol li{margin-bottom:14px}
-.note{background:var(--card);border-left:4px solid var(--primary);border-radius:12px;padding:18px 22px;max-width:620px;margin:24px auto 0;color:var(--muted)}
+.steps-layout{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:36px;max-width:860px;margin:0 auto}
+.steps-content{flex:1 1 340px}
+.steps-content ol{margin:0;padding-left:22px}
+.steps-content ol li{margin-bottom:14px}
+.note{background:var(--card);border-left:4px solid var(--primary);border-radius:12px;padding:18px 22px;margin-top:24px;color:var(--muted)}
+.qr-box{flex:0 0 auto;background:#fff;padding:16px;border-radius:20px;text-align:center;box-shadow:0 8px 24px #00000044}
+.qr-box img{display:block;width:210px;height:210px}
+.qr-box span{display:block;color:#15131a;font-size:.8rem;font-weight:600;margin-top:8px}
 .cta{text-align:center}
 footer{text-align:center;color:var(--muted);padding:32px 0;font-size:.9rem}
 </style>
@@ -51,19 +56,22 @@ footer{text-align:center;color:var(--muted);padding:32px 0;font-size:.9rem}
 
 <section><div class="wrap">
 <h2>How to get started</h2>
-<ol>
-<li>Open this page on your Android mobile. Or scan QR Code</li>
-<li>Tap on <strong>Download FlowT</strong></li>
-<li>Use the app for a few days: create activities, set the timer and check your stats.</li>
-<li>Send us your feedback: bugs, ideas or anything you didn’t understand.</li>
-</ol>
-<div class="note">You may need to allow the installation of apps from external sources in your Android settings.</div>
-</div></section>
-<section>
-  <div class="wrap">
-    <iframe src="qr-code-flowt.svg" width="500" height="500" sandbox></iframe>
+<div class="steps-layout">
+  <div class="steps-content">
+    <ol>
+      <li>Open this page on your Android mobile, or scan the QR Code.</li>
+      <li>Tap on <strong>Download FlowT</strong></li>
+      <li>Use the app for a few days: create activities, set the timer and check your stats.</li>
+      <li>Send us your feedback: bugs, ideas or anything you didn’t understand.</li>
+    </ol>
+    <div class="note">You may need to allow the installation of apps from external sources in your Android settings.</div>
   </div>
-</section>
+  <div class="qr-box">
+    <img src="qr-code-flowt.svg" alt="QR Code to download FlowT">
+    <span>Scan to download</span>
+  </div>
+</div>
+</div></section>
 
 <section class="cta"><div class="wrap">
 <h2>Ready to give it a go?</h2>
